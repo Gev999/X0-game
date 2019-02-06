@@ -1,0 +1,27 @@
+body {
+    background-color: rgb(238, 238, 238);
+    background-image: url('http://www.ruseart.info/wp-content/uploads/2018/01/arctic-background-white-blue.jpg')
+}
+
+.container {
+    height: 100vh;
+}
+
+.block-table {
+    width: 42vw;
+}
+
+.block-item{
+    height: 14vw;
+    background-color: rgb(235, 241, 241);
+    padding: 0;
+}
+
+.icon-img {
+    width: 100%;
+}
+
+.wrapp {
+    position: relative;
+    height: 100%;
+}
