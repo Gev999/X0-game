@@ -8,17 +8,19 @@ body {
 }
 
 .block-table {
-    width: 42vw;
+    width: 39vw;
 }
 
 .block-item{
-    height: 14vw;
+    height: 13vw;
     background-color: rgb(235, 241, 241);
     padding: 0;
 }
 
 .icon-img {
-    width: 100%;
+    width: 85%;
+    margin-left: 5%;
+    margin-top: 5%;
 }
 
 .wrapp {

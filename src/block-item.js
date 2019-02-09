@@ -11,8 +11,9 @@ export default class BlockItem extends Component {
 
     showImg = ()=> {
         const img = this.props.step%2===0? img0: imgX;
+        const value = this.props.step%2===0? 2: 1;
         this.setState({hidden: false, img: img});
-        this.props.stepInc();
+        this.props.stepInc(this.props.itemId, value);
     }
 
     render() {
