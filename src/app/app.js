@@ -1,5 +1,5 @@
 import React from 'react';
-import GameTable from './game-table'
+import GameTable from '../game-table/game-table'
 
 const App = ()=> {
   return <GameTable />

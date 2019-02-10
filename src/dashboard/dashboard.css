@@ -1,0 +1,29 @@
+.p {
+    font-size: 1.5vw;
+    font-weight: bold;
+    padding-left: 4px !important;
+    margin-bottom: 5px !important;
+}
+
+.p-1 {
+    color: rgb(218, 40, 129);
+}
+.p-2 {
+    color: rgb(87, 87, 255);
+}
+
+.count {
+    color: rgb(13, 117, 13);
+}
+
+@media screen and (max-width: 815px) {
+    .p {
+        font-size: 3vw;
+    }
+}
+
+@media screen and (max-width: 315px) {
+    .p {
+        font-size: 4vw;
+    }
+}

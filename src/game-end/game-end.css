@@ -1,0 +1,31 @@
+.win-title {
+    font-size: 2vw;
+    color: rgb(13, 117, 13);
+}
+
+.play-button {
+    margin-bottom: 3%;
+    font-size: 1vw;
+}
+
+@media screen and (max-width: 825px) {
+    .win-title {
+        font-size: 3vw;
+    }
+
+    .play-button {
+        padding: 5px;
+        font-size: 2vw;
+        margin-left: 25px !important;
+    }
+}
+
+@media screen and (max-width: 315px) {
+    .win-title {
+        font-size: 5vw;
+    }
+
+    .play-button {
+        font-size: 3vw;
+    }
+}
