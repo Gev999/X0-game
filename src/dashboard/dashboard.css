@@ -16,7 +16,7 @@
     color: rgb(13, 117, 13);
 }
 
-@media screen and (max-width: 815px) {
+@media screen and (max-width: 850px) {
     .p {
         font-size: 3vw;
     }

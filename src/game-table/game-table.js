@@ -12,7 +12,12 @@ const GameTable = (props) => {
                     <div className="col-6">
                         <center>{props.title}</center>
                     </div>
-                    {props.blocks}
+                    <div className="col-12">
+                        <div className="row line-div">
+                            {props.blocks}
+                            <div className={`line ${props.line}`}></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </React.Fragment>

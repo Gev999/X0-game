@@ -22,6 +22,45 @@ body {
     margin-left: 5%;
     margin-top: 5%;
 }
+.line-div {
+    position: relative;
+}
+
+.line {
+    background-color: rgba(0, 255, 34, 0.925);
+    position: absolute;
+}
+
+.line-1, .line-2, .line-3 {
+    top: 5%;
+    width: 5%;
+    height: 90%;
+}
+
+.line-4, .line-7, .line-10 {
+    left: 2%;
+    width: 96%;
+    height: 5%;
+}
+
+.line-1 {
+    left: 13%;
+}
+.line-2 {
+    left: 47%;
+}
+.line-3 {
+    right: 15%;
+}
+.line-4 {
+    top: 13%;
+}
+.line-7 {
+    top: 47%;
+}
+.line-10 {
+    bottom: 13%;
+}
 
 .wrapp {
     position: relative;

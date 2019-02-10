@@ -18,29 +18,31 @@ const withGameTable = (Wrapp) => {
             const end = true;
             for (let i = 0; i <= 6; i += 3) {
                 if (gameState[i] === gameState[i + 1] && gameState[i + 1] === gameState[i + 2]) {
-                    return { value: gameState[i], end };
+                    return { value: gameState[i], end, name: `line-${i+4}` };
                 }
             }
             for (let i = 0; i < 3; i++) {
                 if (gameState[i] === gameState[i + 3] && gameState[i + 3] === gameState[i + 6]) {
-                    return { value: gameState[i], end };
+                    return { value: gameState[i], end, name: `line-${i+1}` };
                 }
             }
             if (gameState[0] === gameState[4] && gameState[4] === gameState[8]) {
-                return { value: gameState[0], end };
+                return { value: gameState[0], end, name: 'line-5' };
             }
             if (gameState[2] === gameState[4] && gameState[4] === gameState[6]) {
-                return { value: gameState[2], end };
+                return { value: gameState[2], end, name: 'line-6' };
             }
             if (this.state.step===10) {
                 return {
                     value: 0,
                     end: true,
+                    name: '',
                 }
             }
             return {
                 value: null,
                 end: false,
+                name: '',
             };
         }
 
@@ -113,7 +115,7 @@ const withGameTable = (Wrapp) => {
                 pl2: this.state.pl2,
             }
             return (
-                <Wrapp blocks={blocks} title={title} result={res}/>
+                <Wrapp blocks={blocks} title={title} result={res} line={result.name}/>
             )
         }
     }
